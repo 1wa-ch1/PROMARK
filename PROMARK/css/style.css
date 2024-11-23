@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+html,body,main,section,ul,ol,li,p,a {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-family: Lato, Noto Sans JP, sans-serif;
+  font-weight: 350;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+/* header */
+.header_inner {
+  display: flex;
+  margin-top: 90px;
+}
+.header_nav_list {
+  display: flex;
+  margin-left: 70px;
+  letter-spacing: 1px;
+}
+.header_nav_item {
+  margin-right: 30px;
+  font-size: 0.9rem;
+}
+.header_nav_item:nth-of-type(5) {
+  margin-right: 80px;
+}
+.header_nav_item:last-child {
+  margin-right: 0; 
+}
+.header_nav_item a {
+  color: #fff;
+}
+.header_nav_item a:hover {
+  opacity: 0.7;
+}
+
+.header_right {
+  display: flex;
+}
+.header_sns_list {
+  display: flex;
+  margin-left: 65px;
+  margin-right: 60px;
+}
+.header_sns_list_item {
+  margin-right: 20px;
+  width: 18px;
+  height: 18px;
+}
+.header_sns_list_item:last-child {
+  margin-right: 0;
+}
+.header_appDownload {
+  font-size: 0.9rem;
+  margin-right: 15px;
+  letter-spacing: 1px;
+}
+.header_appDownload a {
+  color: #fff;
+}
+.header_appDownload a:hover {
+  opacity: 0.7;
+}
+.header_buyButton:hover {
+  opacity: 0.7;
+}
+.header_buyButton_msk {
+  position: absolute;
+  top: -10px;
+  width: 115px;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+.header_buyButton_msk span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 0.7rem;
+  color: #fff;
+}
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 90px;
+  right: 70px;
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 4px;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+.header {
+  position: relative;
+  z-index: 20;
+}
+/* .top_kv_list {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+ }  */
+.top_kv_title {
+  position: absolute;
+  top: 250px;
+  left: 70px;
+  z-index: 20;
+}
+h1 {
+  font-weight: 200;
+  font-size: 100px;
+  letter-spacing: -10px;
+  color: #fff;
+  margin: 0;
+}
+#top_kv_title1 {
+  color: #fff;
+  padding-top: 20px;
+  line-height: 30px;
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+#top_kv_title2 {
+  color: #fff;
+  padding-top: 40px;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+.top_kv_nav {
+  position: absolute;
+  top: 300px;
+  left:1170px;
+  z-index: 20;
+  color: #fff;
+}
+.top_kv_nav_btn_left {
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+.top_kv_nav_btn_right {
+  font-size: 1.8rem;
+}
+.concept {
+  margin-top: 245px;
+  margin-left: 270px;
+}
+
+.concept_title {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2em;
+}
+.vertical_title {
+  position: absolute;
+  left: 1180px;
+  writing-mode: vertical-rl;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 10px;
+}
+.concept_explanation {
+  padding-top: 130px;
+}
+.concept_explanation_inner {
+  margin-bottom: 50px;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+}
+.concept_explanation_inner:last-child {
+  margin-bottom: 0;
+}
+.how-to-use {
+  margin-left: 270px;
+  margin-top: 290px;
+}
+.how-to-use_inner {
+  display: flex;
+}
+.how-to-use-img {
+  position: relative;
+  width: 670px
+}
+.vertical_title_right {
+  position: absolute;
+  left: 110px;
+  writing-mode: vertical-rl;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 10px;
+}
+.how-to-use_title {
+  margin-top: 200px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.explanation {
+  letter-spacing: 0.04em;
+  line-height: 30px;
+}
+.small {
+  font-size: 0.8rem;
+}
+.how-to-use-space {
+  margin-right: 100px;
+}
+.product {
+  margin-top: 180px;
+}
+.product_inner {
+  display: flex;
+}
+.product_title {
+  margin-top: 150px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.product-img {
+  width: 660px;
+}
+.product-space {
+  margin-left: 80px;
+}
+.interview {
+  margin-top: 260px;
+}
+.interview img {
+  width: 730px;
+}
+.interview-content1 {
+  margin-left: 230px;
+}
+.interview_title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+.wrapper {
+  display: flex;
+}
+.interview_name {
+  position: absolute;
+  right: 400px;
+}
